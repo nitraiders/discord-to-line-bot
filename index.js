@@ -1,4 +1,11 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+// --- Renderの強制終了を防ぐための設定（ここから） ---
+const http = require('http');
+http.createServer((req, res) => {
+    res.write('Bot is alive');
+    res.end();
+}).listen(process.env.PORT || 10000);
+// --- ここまで ---
+// const { Client, GatewayIntentBits } = require('discord.js');
 
 // 環境変数などの設定 (.env ファイルを使用することも推奨されますが、最小限のため直接記述も可能にしています)
 // 実際の利用時は、以下の変数を適切に書き換えてください。
