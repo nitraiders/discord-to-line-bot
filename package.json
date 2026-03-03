@@ -1,0 +1,12 @@
+{
+  "name": "discord-to-gas-bot",
+  "version": "1.0.0",
+  "description": "Discord message forwarder to GAS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
