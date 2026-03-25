@@ -65,4 +65,4 @@ client.on('messageCreate', async (message) => {
 });
 
 // ボットをログインさせる
-client.login(DISCORD_TOKEN);
+client.login("Bot " + process.env.DISCORD_TOKEN);
